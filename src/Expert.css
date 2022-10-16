@@ -1,0 +1,121 @@
+.expert-section{
+    background-color: #004047;
+    width: 100%;
+    color: #fff;
+}
+.expert{
+    display: grid;
+    grid-template-rows: 300px 2fr;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.expert-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.expert-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exp-image img{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin: 15px;
+}
+.expert-card{
+    display: flex;
+    width: 23vw;
+    height: 20vw;
+    background-color: #012f34;
+    justify-content: center;
+    align-items: center;
+}
+.exp-image h3{
+    color: #79c8c7;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 10px;
+}
+.exp-image p{
+    font-size: 1.2vw;
+    margin: 0;
+    padding: 10px;
+    font-weight: 700;
+}
+.expert-header h1{
+    font-size: 4vw;
+    font-weight: 700;
+}
+.exp-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+@media screen and (max-width: 590px){
+    .expert{
+        grid-template-rows: 90px 2fr;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 70px 0;
+        gap: 30px;
+    }
+    .expert-header h1{
+        font-size: 29px;
+    }
+    .expert-container{
+        grid-template-columns: 100% ;
+        grid-row: auto;
+        gap: 40px;
+    }
+    .expert-card{
+        width: 80vw;
+        height: 35vw;
+    }
+    .exp-image img{
+        width: 65px;
+        height: 65px;
+    }
+    .exp-image h3{
+        font-size: 16px;
+    }
+    .exp-image p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 724px) and (min-width: 590px){
+    .expert{
+        grid-template-rows: 90px 2fr;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 70px 0;
+        gap: 30px;
+    }
+    .expert-container{
+        grid-template-columns: 1fr 1fr ;
+        grid-row: auto auto auto;
+        gap: 40px;
+    }
+    .expert-card{
+        width: 40vw;
+        height: 28vw;
+    }
+    .exp-image img{
+        width: 55px;
+        height: 55px;
+    }
+    .exp-image h3{
+        font-size: 16px;
+    }
+    .exp-image p{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,48 @@
+.section-pink{
+    background-color: rgb(209, 87, 112);
+}
+.content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 40px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.section-pink-btn button{
+    width: 170px;
+    height: 50px;
+    color: #002529;
+    background-color: transparent;
+    border-radius: 50px;
+    border:2px solid #002529;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 450ms;
+}
+.section-pink-btn button:hover{
+    color: #fff;
+    background-color: #002529;
+    transform: scale(1.08);
+}
+.content .text h1{
+    color: #002529;
+    font-size: 3.1rem;
+    font-weight: 800;
+    line-height: 3.1rem;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 590px){
+    .content .text h1{
+        font-size: 38px;
+        font-weight: 800;
+        line-height: 40px;
+    }
+    .section-pink-btn button{
+        width: 160px;
+    }
+}

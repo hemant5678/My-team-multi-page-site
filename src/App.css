@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu .active{
+    color: rgb(209, 87, 112);
+}
+.footer-menu .active{
+    color: rgb(209, 87, 112);
+}
